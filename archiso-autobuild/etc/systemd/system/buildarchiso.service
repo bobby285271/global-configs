@@ -1,0 +1,7 @@
+[Unit]
+Description=Build Archiso
+
+[Service]
+User=root
+Type=oneshot
+ExecStart=+/root/buildarchiso.sh
