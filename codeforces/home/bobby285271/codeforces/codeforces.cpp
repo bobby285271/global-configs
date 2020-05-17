@@ -98,10 +98,17 @@ signed main()
 #ifdef _DEBUG
     freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
+    clock_t clock_start_time;
+    clock_start_time = clock();
 #endif
+
     read(TESTCASE_NUM);
     while (TESTCASE_NUM--)
         solve();
+#ifdef _DEBUG
+    write(endl, "Execution time:", clock() - clock_start_time, "ms", endl, endl);
+#endif
+    return 0;
 }
 
 //////// Solution Below ////////
