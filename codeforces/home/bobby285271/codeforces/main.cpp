@@ -1,10 +1,8 @@
 #if 0
-proName="${0%.*}"
-g++ -std=c++17 -O2 -Wall -lm -o $proName "$0"
-./$proName "$@"
-rm $proName
-exit
+        clear
+        g++ -std=c++17 -O2 -Wall -lm "$0" && time ./a.out
+        exit
 #endif
-
-#define _DEBUG
+#define _USE_DEBUG
+#define _USE_FILEIO
 #include "codeforces.cpp"
